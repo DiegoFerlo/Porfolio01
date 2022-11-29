@@ -558,7 +558,7 @@ body {
   border-radius: 20px;
   box-shadow: 4px 8px 8px rgb(0, 0, 0);
 }
-.hability__menu {
+.hability-list {
   display: grid;
   grid-template-columns: 100px 100px;
   align-items: center;
@@ -567,13 +567,12 @@ body {
   gap: 2rem;
 }
 @media screen and (min-width: 1024px) {
-  .hability__menu {
+  .hability-list {
     grid-template-columns: 200px 200px 200px 200px;
     gap: 8rem;
   }
 }
-
-.list-hability {
+.hability-list__item {
   margin-bottom: 5rem;
   display: flex;
   justify-content: center;
@@ -644,24 +643,6 @@ body {
   position: relative;
   font-size: 3rem;
   text-align: center;
-}
-.title-project::before {
-  content: "";
-  position: absolute;
-  width: 15%;
-  height: 4px;
-  background-color: white;
-  top: 50%;
-  left: 5%;
-}
-.title-project::after {
-  content: "";
-  position: absolute;
-  width: 15%;
-  height: 4px;
-  background-color: white;
-  top: 50%;
-  right: 5%;
 }
 
 * {

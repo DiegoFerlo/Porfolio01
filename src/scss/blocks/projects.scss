@@ -3,8 +3,6 @@
 @use '../mixins/pseudo.scss' as *;
 
 .project {
-
-
     &__menu {
         display: grid;
         grid-template-columns: 300px;
@@ -16,7 +14,6 @@
         transition: transform;
 
         @include responsive(laptop) {
-
             grid-template-columns: 500px 500px;
             grid-template-rows: 400px 400px;
         }
@@ -50,10 +47,6 @@
     }
 }
 
-//.list-proyects:hover .proyects-image{
-// transform: translateY(40px);
-// transition-duration: 1000ms;
-
 
 
 .project-image {
@@ -72,22 +65,4 @@
     position: relative;
     font-size: 3rem;
     text-align: center;
-
-    &::before {
-        @include pseudo(15%, 4px) {
-            background-color: white;
-            top: 50%;
-            left: 5%;
-
-        }
-    }
-
-    &::after {
-        @include pseudo(15%, 4px) {
-            background-color: white;
-            top: 50%;
-            right: 5%;
-
-        }
-    }
 }
