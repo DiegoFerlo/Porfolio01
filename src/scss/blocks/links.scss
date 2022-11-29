@@ -1,0 +1,16 @@
+@use '../mixins/responsive.scss' as *;
+
+.link {
+
+
+    border-width: 0 0 2px;
+    border-style: solid;
+    border-color: black;
+
+
+
+    @include responsive(laptop) {
+       border: none;
+    }
+
+}

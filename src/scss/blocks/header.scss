@@ -1,0 +1,71 @@
+@use '../mixins/pseudo.scss' as *;
+@use '../mixins/responsive.scss' as *;
+@use '../mixins/hover.scss' as *;
+
+.header {
+    height: 570px;
+    margin-bottom: 100px;
+    
+    @include responsive(laptop){
+        height: 800px;
+    }
+    
+    &__top {
+        position: relative;
+        background-color: rgb(255, 255, 255);
+        height: 62px;
+        display: flex;
+        justify-content: space-between;
+        max-width: 100%;
+        border-radius: 0 0 20px 20px;
+        box-shadow: 4px 8px 8px rgb(8, 8, 8);   
+    }
+    &__name {
+
+        text-align: center;
+    }
+    &__image {
+        width: 249px;
+        height: 245px;
+        border-radius: 50%;
+        
+
+        @include responsive(laptop) {
+            width: 400px;
+            height: 400px;
+        }
+    }
+    &__image-container {
+        width: 249px;
+        height: 245px;
+        border-radius: 50%;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: red;
+        margin-top: 80px;
+
+        @include responsive(laptop) {
+            width: 400px;
+            height: 400px;
+            margin-left: 200px;
+            margin-top: 200px;
+        }
+    }
+
+    &__info {
+        padding: 0 4rem;
+        text-align: right;
+
+
+
+
+        @include responsive(laptop) {
+            position: relative;
+            left: 600px;
+            bottom: 300px;
+            width: 700px;
+
+        }
+
+    }
+}

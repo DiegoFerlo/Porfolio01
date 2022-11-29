@@ -1,0 +1,9 @@
+@use '../mixins/responsive.scss' as *;
+
+.image{
+    max-width: 60px;
+    
+    @include responsive(laptop){
+        max-width: 100px;
+    }
+}

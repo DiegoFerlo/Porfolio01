@@ -1,0 +1,41 @@
+@use '../mixins/responsive.scss' as *;
+
+.menu {
+
+    display: none;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    flex-direction: column;
+    padding-top: 6rem;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    height: calc(100vh - 62px);
+    position: absolute;
+    width: 100%;
+    top: 62px;
+    left: 0;
+    font-size: 2rem;
+    line-height: 5rem;
+
+    @include responsive(laptop) {
+        background-color: transparent;
+        position: relative;
+        top: 0;
+        height: auto;
+    
+        flex-direction: row;
+        padding: 0 2rem;
+        gap: 2rem;
+        font-size: 1.5rem;
+        justify-content: flex-end;
+
+
+
+    }
+
+    &--show {
+        display: flex;
+
+
+    }
+}
