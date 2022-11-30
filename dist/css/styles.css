@@ -366,11 +366,16 @@ body {
   color: rgb(255, 255, 255);
   margin-left: auto;
   margin-right: auto;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .title {
   line-height: 4rem;
-  font-size: 2.5rem;
+  font-size: 4rem;
+  text-align: center;
+}
+.title--ability {
+  color: #222;
 }
 
 .text {
@@ -400,6 +405,11 @@ body {
   .header {
     height: 800px;
   }
+}
+.header__title {
+  text-align: right;
+  list-style: 4rem;
+  font-size: 2.5rem;
 }
 .header__top {
   position: relative;
@@ -551,14 +561,29 @@ body {
   }
 }
 
-.hability {
+.ability {
   margin-bottom: 100px;
   padding: 50px;
-  background-color: rgb(255, 255, 255);
+  background-image: linear-gradient(red, blue);
   border-radius: 20px;
   box-shadow: 4px 8px 8px rgb(0, 0, 0);
+  position: relative;
+  height: 90vh;
 }
-.hability-list {
+@media screen and (min-width: 1024px) {
+  .ability {
+    height: 70vh;
+  }
+}
+.ability__body {
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  width: 98%;
+  height: 98%;
+  background-color: #222;
+}
+.ability-list {
   display: grid;
   grid-template-columns: 100px 100px;
   align-items: center;
@@ -567,12 +592,12 @@ body {
   gap: 2rem;
 }
 @media screen and (min-width: 1024px) {
-  .hability-list {
+  .ability-list {
     grid-template-columns: 200px 200px 200px 200px;
     gap: 8rem;
   }
 }
-.hability-list__item {
+.ability-list__item {
   margin-bottom: 5rem;
   display: flex;
   justify-content: center;
@@ -583,6 +608,8 @@ body {
   box-shadow: 4px 4px 10px rgb(0, 0, 0);
   background-color: #222;
   padding-top: 10px;
+  transition: transform 0.8s;
+  transform: scale(0);
 }
 
 .project__menu {
@@ -635,16 +662,23 @@ body {
   height: 300%;
 }
 
-.fade-in {
+* {
+  outline: 1px solid red;
+}
+
+.translate-right {
   transform: translatex(0px);
 }
 
-.title-project {
-  position: relative;
-  font-size: 3rem;
-  text-align: center;
+.scale-up {
+  transform: scale(1);
 }
 
-* {
-  outline: 1px solid red;
+.form {
+  height: 400px;
+  margin-top: 50px;
+  text-align: center;
+}
+.form__field {
+  line-height: 150px;
 }

@@ -1,7 +1,15 @@
 .title {
-
     line-height: 4rem;
-    font-size: 2.5rem;
-    
-}
+    font-size: 4rem;
+    text-align: center;
 
+    &--ability {
+
+        color: #222;
+    }
+
+  // &--project {}
+
+  //  &--contact {}
+
+}

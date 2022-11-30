@@ -7,15 +7,13 @@
         align-items: center;
         justify-content: center;
     }
-
     &__bar {
         background-color: rgb(6, 6, 6);
         position: relative;
         width: 30px;
         height: 3px;
         right: 30px;
-
-
+        
         &::before,
         &::after {
             content: '';

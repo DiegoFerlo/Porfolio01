@@ -1,11 +1,28 @@
 @use '../mixins/responsive.scss' as *;
+@use '../mixins/hover.scss' as *;
 
-.hability {
+.ability {
     margin-bottom: 100px;
     padding: 50px;
-    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(red, blue);
     border-radius: 20px;
     box-shadow: 4px 8px 8px rgb(0, 0, 0);
+    position: relative;
+    height: 90vh;
+
+    @include responsive(laptop) {
+        height: 70vh;
+    }
+
+    &__body {
+        position: absolute;
+        top: 1%;
+        left: 1%;
+        width: 98%;
+        height: 98%;
+        background-color: #222;
+    }
+
 
     &-list {
         display: grid;
@@ -14,6 +31,7 @@
         justify-content: center;
         text-align: center;
         gap: 2rem;
+
 
         @include responsive(laptop) {
             grid-template-columns: 200px 200px 200px 200px;
@@ -32,9 +50,8 @@
             box-shadow: 4px 4px 10px rgb(0, 0, 0);
             background-color: #222;
             padding-top: 10px;
-
-
-
+            transition: transform 0.8s;
+            transform: scale(0);
         }
     }
 }

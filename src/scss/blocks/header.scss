@@ -10,6 +10,11 @@
         height: 800px;
     }
     
+    &__title{
+        text-align: right;
+        list-style: 4rem;
+        font-size: 2.5rem;
+    }
     &__top {
         position: relative;
         background-color: rgb(255, 255, 255);

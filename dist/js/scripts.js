@@ -2,7 +2,7 @@ const menuElement = document.getElementById('menu')
 const toggleElement = document.getElementById('toggle')
 
 const listProjects = document.querySelectorAll('.list-project')
-const listHability = document.querySelectorAll('.hability-list__item')
+const listAbility = document.querySelectorAll('.ability-list__item')
 
 toggleElement.addEventListener('click', () => {
     menuElement.classList.toggle('menu--show')
@@ -38,9 +38,10 @@ const callback = (entries) => {
     entries.forEach(element => {
         if (element.isIntersecting) {
             if (element.target.classList.contains('list-project')) {
-                element.target.classList.add('fade-in')
-            } else if (element.target.classList.contains('hability-list__item')) {
-                element.target.style.backgroundColor = "red"
+                element.target.classList.add('translate-right')
+            } else if (element.target.classList.contains('ability-list__item')) {
+                element.target.classList.add('scale-up')
+                
             }
 
         }
@@ -50,5 +51,5 @@ const callback = (entries) => {
 const observer = new IntersectionObserver(callback, options)
 
 listProjects.forEach(listProject => observer.observe(listProject))
-listHability.forEach(diego => observer.observe(diego))
+listAbility.forEach(ability => observer.observe(ability))
 

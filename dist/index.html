@@ -8,6 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/styles.css" />
     <title>Porfolio</title>
 </head>
@@ -22,10 +26,14 @@
                 </div>
             </div>
             <ul class="menu" id="menu">
-                <li class="link"><a href=""></a>Home</li>
-                <li class="link"><a href=""></a>Habilidades</li>
-                <li class="link"><a href=""></a>Proyectos</li>
-                <li class="link"><a href=""></a>Contacto</li>
+                <li class="link">
+                    <a href="/">Home</a>
+                </li>
+                <li class="link">
+                    <a href="#ability">Habilidades</a>
+                </li>
+                <li class="link"><a href="">Proyectos</a></li>
+                <li class="link"><a href="">Contacto</a></li>
             </ul>
         </div>
         <div class="header__name">
@@ -34,7 +42,7 @@
                     class="header__image">
             </div>
             <div class="header__info">
-                <h1 class="title">FRONTEND DEVELOPER</h1>
+                <h1 class="header__title">FRONTEND DEVELOPER</h1>
                 <p class="text text--right">Diego Fer.</p>
                 <p class="text text--right">Madrid</p>
             </div>
@@ -42,71 +50,94 @@
     </header>
     <main class="main">
 
-        <article class="hability">
-            <h2>Habilidades</h2>
-            <ul class="hability-list">
-                <li class="hability-list__item">
-                    <img src="../dist/assets/images/html5.png" alt="" class="image">
-                    <h2>HTML</h2>
-                </li>
-                <li class="hability-list__item">
-                    <img src="../dist/assets/images/css.webp" alt="" class="image">
-                    <h2>CSS</h2>
-                </li>
-                <li class="hability-list__item">
-                    <img src="../dist/assets/images/js.png" alt="" class="image">
-                    <h2>JS</h2>
-                </li>
-                <li class="hability-list__item">
-                    <img src="../dist/assets/images/sass.webp" alt="" class="image">
-                    <h2>SASS</h2>
-                </li>
-                <li class="hability-list__item">
-                    <img src="../dist/assets/images/bem.svg" alt="" class="image">
-                    <h2>BEM</h2>
-                </li>
-                <li class="hability-list__item">
-                    <img src="../dist/assets/images/ae.webp" alt="" class="image">
-                    <h2>AE</h2>
+        <article id="ability" class="ability">
+            <div class="ability__body">
+                <h2 class="title title--ability">Habilidades</h2>
+                <ul class="ability-list">
+                    <li class="ability-list__item">
+                        <img src="assets/images/html5.png" alt="" class="image">
+                        <h2>HTML</h2>
+                    </li>
+                    <li class="ability-list__item">
+                        <img src="assets/images/css.webp" alt="" class="image">
+                        <h2>CSS</h2>
+                    </li>
+                    <li class="ability-list__item">
+                        <img src="assets/images/js.png" alt="" class="image">
+                        <h2>JS</h2>
+                    </li>
+                    <li class="ability-list__item">
+                        <img src="assets/images/sass.webp" alt="" class="image">
+                        <h2>SASS</h2>
+                    </li>
+                    <li class="ability-list__item">
+                        <img src="assets/images/bem.svg" alt="" class="image">
+                        <h2>BEM</h2>
+                    </li>
+                    <li class="ability-list__item">
+                        <img src="assets/images/ae.webp" alt="" class="image">
+                        <h2>AE</h2>
 
-                </li>
-                <li class="hability-list__item">
-                    <img src="../dist/assets/images/github-icon-1-logo.svg" alt="" class="image">
-                    <h2>GIT</h2>
-                </li>
-                <li class="hability-list__item">
-                    <img src="../dist/assets/images/C4D_Logo.png" alt="" class="image">
-                    <h2>C4</h2>
-                </li>
-            </ul>
-
+                    </li>
+                    <li class="ability-list__item">
+                        <img src="../dist/assets/images/github-icon-1-logo.svg" alt="" class="image">
+                        <h2>GIT</h2>
+                    </li>
+                    <li class="ability-list__item">
+                        <img src="../dist/assets/images/C4D_Logo.png" alt="" class="image">
+                        <h2>C4</h2>
+                    </li>
+                </ul>
+            </div>
         </article>
 
         <article class="project">
-            <h2 class="title-project">Proyectos</h2>
+            <h2 class="title title--project">Proyectos</h2>
             <ul class="project__menu">
                 <a target="_blank" href="https://github.com/DiegoFerlo/Dark-Theme">
                     <li class="list-project">
-                        <img src="/dist/assets/images/Desktop-light-mode.png" class="proyect-image" alt="">
+                        <img src="assets/images/Desktop-light-mode.png" class="proyect-image" alt="">
                     </li>
                 </a>
                 <a href="">
                     <li class="list-project">
-                        <img src="/dist/assets/images/desktop-design.jpg" class="proyect-image" alt="">
+                        <img src="assets/images/desktop-design.jpg" class="proyect-image" alt="">
                     </li>
                 </a>
                 <a href="">
                     <li class="list-project">
-                        <img src="/dist/assets/images/desktop-design 2.jpg" class="proyect-image" alt="">
+                        <img src="assets/images/desktop-design 2.jpg" class="proyect-image" alt="">
                     </li>
                 </a>
                 <a href="">
                     <li class="list-project">
-                        <img src="/dist/assets/images/desktop-design 3.jpg" class="proyect-image" alt="">
+                        <img src="assets/images/desktop-design 3.jpg" class="proyect-image" alt="">
                     </li>
                 </a>
             </ul>
         </article>
+        <article class="formulario">
+            <h2 class="title title--contact">Contacto</h2>
+            <form class="form">
+                <div class="column__form">
+                    <div class="form__field">
+                        <label for="name" class="form__label">Nombre</label>
+                        <input type="name" id="name" class="form__input" name="name" type="name">
+                    </div>
+                    <div class="form__field">
+                        <label for="email" class="form__label">Email</label>
+                        <input type="email" id="email" class="form__input" name="email" type="email">
+                    </div>
+                    <div>
+                        <div class="form__field">
+                            <label class="form__label" for="textarea">Texto</label>
+                            <textarea class="textarea" name="texarea" id="message"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </article>
+
     </main>
     <footer class="footer"></footer>
     <div class="social">
